@@ -1,0 +1,104 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 2
+   
+   Style Sheet for Costume Expressions Front Page
+   Author: Evelyn Duarte
+   Date: 10/26/18  
+   
+   Filename: ce_styles.css
+*/
+
+
+/* Window and Body Styles */
+/* The color for entire web browser. */
+html {
+    background-color: rgb(101, 101, 101);
+}
+
+/* The body has margin space with it being horizontally centered, a font placed and the width ranges from 320px to 960px. */
+body {
+    background-color: white;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    min-width: 320px;
+    max-width: 960px;
+    position: relative;
+}
+
+/* The image is block and width is 100 percent. */
+img {
+    display: block;
+    width: 100%;
+}
+
+/* The underlining was removed from hypertext links. */
+nav a {
+    text-decoration: none;
+}
+
+/* Body Header Styles */
+/* The header thats a child of the body has a background-color and height. */
+body>header {
+    background-color: rgb(191, 68, 70);
+    height: 40px;
+}
+
+/* the navigation list within a body header is displayed block that floats to the left also the padding from left and right is 10px while bottom and top 0px. */
+body>header>nav>ul>li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    padding: 10px 0px;
+}
+
+/* For every visited link in the navigation, it has a font size of 0.9em and a color of rgb value. */
+body>header>nav>ul>li>a:visited {
+    font-size: 0.9em;
+    color: rgb(51, 51, 51);
+}
+
+body>header>nav>ul>li>a:link {
+    font-size: 0.9em;
+    color: rgb(51, 51, 51);
+}
+
+/* When hovering over the navigation, the text color is an rgb color value. */
+body>header>nav>ul>li>a:hover {
+    color: rgb(255, 211, 211);
+}
+
+body>header>nav>ul>li>a:active {
+    color: rgb(255, 211, 211);
+}
+
+/* DIV Container Styles */
+/* The padding is effecting the ID with container. */
+div#container {
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+
+/* The hyperlinks nested in the class cell is being effected. */
+div.cell a {
+    display: block;
+    width: 100%;
+    padding-left: 8px;
+    padding-top: 8px
+}
+
+/* Footer Styles */
+/* The footerhas right and bottom coordinates of 8px, the text color has an rgb color value and the size is set to vmin with a text aligned to the right. */
+footer {
+    right: 8px;
+    bottom: 8px;
+    color: rgb(143, 33, 36);
+    font-size: 2vmin;
+    text-align: right;
+}
